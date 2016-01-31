@@ -1,4 +1,5 @@
-# Getting_Cleaning_Data_Course_Project - This repository is for the Course Project.
+# Getting_Cleaning_Data_Course_Project 
+##- This repository is for the Course Project.
 
 ##The code in the repository, "run_analysis" is explained below:
 
@@ -21,11 +22,11 @@ to make the data tidy, i needed to rename the variable and convert character var
 I also converted the character variables to factor variables. All other requirements for tidy data were already met.
 
 in renaming the variables i took the following steps:
->if starts with t add “TimeDomain” else if start with f then add “FrequencyDomain”
->if there is mean() then add “AverageOf” 
->if there is std() then add “StandardDeviationOf” 
->replace both mean() and std () by “AlongAxis” – except for last 8
->add “GroupMeanOf” in the starting of each var name
+*if starts with t add “TimeDomain” else if start with f then add “FrequencyDomain”
+*if there is mean() then add “AverageOf” 
+*if there is std() then add “StandardDeviationOf” 
+*replace both mean() and std () by “AlongAxis” – except for last 8
+*add “GroupMeanOf” in the starting of each var name
 
 finally i exported the data using the write.table function.
 
