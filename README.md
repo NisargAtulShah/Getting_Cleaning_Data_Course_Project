@@ -18,7 +18,15 @@ To find the average of each variable for each subject and each activity i used t
 after grouping the data by the group_by function and summarizing each variable with the function mean, i arrived at the required data
 
 to make the data tidy, i needed to rename the variable and convert character variables in to factor variables.
-all other requirements for tidy data were already met.
+I also converted the character variables to factor variables. All other requirements for tidy data were already met.
 
+in renaming the variables i took the following steps:
+>if starts with t add “TimeDomain” else if start with f then add “FrequencyDomain”
+>if there is mean() then add “AverageOf” 
+>if there is std() then add “StandardDeviationOf” 
+>replace both mean() and std () by “AlongAxis” – except for last 8
+>add “GroupMeanOf” in the starting of each var name
+
+finally i exported the data using the write.table function.
 
 ##The code book for the data is the file "code_book.txt"
